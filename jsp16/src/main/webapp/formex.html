@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>다양한 입력 폼</title>
+</head>
+<body>
+	<form action="beanInfoMake.jsp" method="post" ><br><br><br>
+		<table border="5%" align="center" style="border-color:orange">
+			<tr>
+   				<h1 align="center">회원가입</h1>
+   			</tr>
+	        <tr>
+		        <th>이름</th>
+		        <td><input type="text" placeholder="NAME"></td>        
+            </tr>
+            <tr>
+                <th>이메일</th>
+                <td><input type="text" placeholder="E-MAIL"></td>      
+            </tr>
+            <tr>
+                <th>아이디</th>
+                <td><input type="text" placeholder="ID"></td>        
+            </tr>
+            <tr>
+                <th>패스워드</th>
+                <td><input type="password" placeholder="PASSWORD"></td>      
+            </tr>
+            <tr>
+                <th>취미(중복o)</th>
+                <td>
+                <input type="checkbox" name="hobby" value="read">독서 &nbsp;&nbsp;
+				<input type="checkbox" name="hobby" value="cook">요리 &nbsp;&nbsp;
+				<input type="checkbox" name="hobby" value="run">조깅 &nbsp;&nbsp;
+				<input type="checkbox" name="hobby" value="swim">수영 <br/>
+                <input type="checkbox" name="hobby" value="캠핑">캠핑 &nbsp;&nbsp;
+                <input type="checkbox" name="hobby" value="등산">등산 &nbsp;&nbsp;
+                <input type="checkbox" name="hobby" value="영화">영화 &nbsp;&nbsp;
+                <input type="checkbox" name="hobby" value="음악">음악
+                </td>     
+            </tr>
+            <tr>
+                <th>전공(중복x)</th>
+                <td>
+	            <input type="radio" name="major" value="kor">국어
+				<input type="radio" name="major" value="eng">영어
+				<input type="radio" name="major" value="mat">수학
+				<input type="radio" name="major" value="des">디자인<br/>
+                </td>     
+            </tr>
+            <tr>
+                <th>연령</th>
+                <td>
+					<select name="age">
+	                    <option value="10">10대</option>
+	                    <option value="20">20대</option>
+	                    <option value="30">30대</option>
+	                    <option value="40">40대이상</option>
+                	</select>
+                </td>     
+            </tr>
+            <tr>
+                <th>기타</th>
+                <td>
+                 	<textarea rows="5" cols="40" name="info" class="form-control"></textarea>
+                </td>     
+            </tr>
+			<tr align="center">
+             	<td colspan="2">
+                	<input style="background-color:white;color:black;border-color:orange;font-size:20px;" type="submit" value="확 인">
+					<input style="background-color:white;color:black;border-color:orange;font-size:20px;" type="reset" value="초기화">
+            	</td>
+			</tr>
+        </table>
+	</form>
+</body>
+</html>
